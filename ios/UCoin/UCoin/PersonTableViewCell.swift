@@ -8,17 +8,19 @@
 
 import UIKit
 
-class PersonViewCell: UITableViewCell {
+class PersonTableViewCell: UITableViewCell {
 
     @IBOutlet weak var personName: UILabel!
     @IBOutlet weak var email: UILabel!
+    var name: String?
+    var mail: String?
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        personName = UILabel()
-        email = UILabel()
+        personName.text = name
+        email.text = mail
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

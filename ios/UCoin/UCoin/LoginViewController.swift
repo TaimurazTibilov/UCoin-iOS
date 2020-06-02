@@ -35,13 +35,13 @@ class LoginViewController: UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
-    
+
     private func styleTextField(textField: UITextField)
     {
         textField.borderStyle = UITextField.BorderStyle.roundedRect
         textField.layer.borderWidth = 2.0
         textField.layer.borderColor = UIColor.clear.cgColor
-        
+
         textField.layer.masksToBounds = false
         textField.layer.shadowColor = UIColor.lightGray.cgColor
         textField.layer.shadowOpacity = 0.5
@@ -92,51 +92,17 @@ class LoginViewController: UIViewController {
                         }
                         if let responseJSON = responseJSON as? [String: Any] {
                             CurrentSession.user = User(name: responseJSON["name"] as! String, accessToken: responseJSON["token"] as! String)
-                            
-                            DispatchQueue.main.async {
-                                if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabViewController") as? UITabBarController {
-                                    vc.modalPresentationStyle = .fullScreen
-                                    vc.modalTransitionStyle = .coverVertical
-                                    self.present(vc, animated: true, completion: nil)
-                                }
-                            }
-                            
-                            let name = CurrentSession.user!.name.components(separatedBy: " ")[0]
-                            
-                            let url = URL(string: "http://renurtt.pythonanywhere.com/user/" + name + "/")!
-                            var request = URLRequest(url: url)
-                            request.httpMethod = "GET"
-                            
-                            let task1 = URLSession.shared.dataTask(with: request) { data, response, error in
-                                guard let data = data, error == nil else {
-                                    print(error?.localizedDescription ?? "No data")
-                                    return
-                                }
-                                if let httpResponse = response as? HTTPURLResponse {
-                                    if (httpResponse.statusCode == 200) {
-                                        var responseJSON : (Any)? = nil
-                                        do {
-                                            responseJSON = try JSONSerialization.jsonObject(with: data, options: [])
-                                        }
-                                        catch {
-                                            print("Error: \(error)")
-                                        }
-                                        if let responseJSON = responseJSON as? [String: Any] {
-                                            CurrentSession.user?.id = (responseJSON["id"] as! Int64)
-                                            CurrentSession.user?.surname = (responseJSON["surname"] as! String)
-                                            CurrentSession.user?.name = (responseJSON["name"] as! String)
-                                            CurrentSession.user?.activeBalance = (responseJSON["active_balance"] as! Int32)
-                                            CurrentSession.user?.passiveBalance = (responseJSON["passive_balance"] as! Int32)
-                                            CurrentSession.user?.email = (responseJSON["email"] as! String)
-                                        }
-                                    }
-                                }
-                            }
-                            task1.resume()
                         }
                     }
+                    DispatchQueue.main.async {
+                        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabViewController") as? UITabBarController {
+                            vc.modalPresentationStyle = .fullScreen
+                            vc.modalTransitionStyle = .coverVertical
+                            self.present(vc, animated: true, completion: nil)
+                        }}
                 }
             }
+            
             task.resume()
         }
         else {

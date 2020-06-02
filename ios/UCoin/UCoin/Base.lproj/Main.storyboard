@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bxq-5I-IIi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bxq-5I-IIi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -469,7 +469,7 @@
                                         <rect key="frame" x="0.0" y="84" width="414" height="631"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="109" id="yxZ-R7-9AZ" customClass="PersonViewCell" customModule="UCoin" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="109" id="yxZ-R7-9AZ" customClass="PersonTableViewCell" customModule="UCoin" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="109"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yxZ-R7-9AZ" id="zkO-Ju-aNh">
@@ -485,7 +485,7 @@
                                                             <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Департамент мобильной разработки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVr-iY-EOR">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ranurtdinov@edu.hse.ru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVr-iY-EOR">
                                                             <rect key="frame" x="20" y="65" width="316" height="33"/>
                                                             <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="16"/>
                                                             <nil key="textColor"/>
@@ -795,55 +795,6 @@
             </objects>
             <point key="canvasLocation" x="2757.971014492754" y="407.8125"/>
         </scene>
-        <!--Рейтинг-->
-        <scene sceneID="jXS-5a-2qM">
-            <objects>
-                <viewController id="uf6-5e-DMi" customClass="RatingViewController" customModule="UCoin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Mwr-Z0-9ib">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSw-VY-2RP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="Dfz-PY-55k"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Рейтинг активности">
-                                        <attributes>
-                                            <color key="NSColor" red="0.6588235294" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="32" name="Thonburi-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="16" lineHeightMultiple="2" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCk-c2-NmM">
-                                <rect key="frame" x="0.0" y="98" width="414" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="pRH-Do-cZa" firstAttribute="trailing" secondItem="RSw-VY-2RP" secondAttribute="trailing" id="1ja-kw-9Y7"/>
-                            <constraint firstItem="FCk-c2-NmM" firstAttribute="top" secondItem="RSw-VY-2RP" secondAttribute="bottom" constant="8" id="5oe-KH-hXJ"/>
-                            <constraint firstItem="pRH-Do-cZa" firstAttribute="top" secondItem="RSw-VY-2RP" secondAttribute="top" constant="44" id="86c-wW-UHv"/>
-                            <constraint firstItem="FCk-c2-NmM" firstAttribute="leading" secondItem="pRH-Do-cZa" secondAttribute="leading" id="Gd0-9j-vuV"/>
-                            <constraint firstItem="pRH-Do-cZa" firstAttribute="bottom" secondItem="FCk-c2-NmM" secondAttribute="bottom" id="Jmm-37-T0K"/>
-                            <constraint firstItem="FCk-c2-NmM" firstAttribute="centerX" secondItem="pRH-Do-cZa" secondAttribute="centerX" id="LiN-C9-uGg"/>
-                            <constraint firstItem="pRH-Do-cZa" firstAttribute="trailing" secondItem="FCk-c2-NmM" secondAttribute="trailing" id="ePE-ew-Xme"/>
-                            <constraint firstItem="RSw-VY-2RP" firstAttribute="leading" secondItem="pRH-Do-cZa" secondAttribute="leading" id="lze-ao-ZNY"/>
-                            <constraint firstItem="RSw-VY-2RP" firstAttribute="centerX" secondItem="pRH-Do-cZa" secondAttribute="centerX" id="p4a-Mz-m5x"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="pRH-Do-cZa"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Рейтинг" image="chart.bar.fill" catalog="system" id="10w-o4-3dK"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fB9-4Q-aaK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1753.6231884057972" y="407.8125"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="Bx3-eH-12v">
             <objects>
@@ -1003,7 +954,6 @@
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="fV4-24-Lo3" kind="relationship" relationship="viewControllers" id="WBn-nh-5IE"/>
                         <segue destination="CvV-mB-dOa" kind="relationship" relationship="viewControllers" id="Cvj-rr-yu8"/>
-                        <segue destination="uf6-5e-DMi" kind="relationship" relationship="viewControllers" id="rRH-PM-P3Z"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -1034,7 +984,6 @@
         <image name="arrowshape.turn.up.left.circle" catalog="system" width="64" height="60"/>
         <image name="briefcase.fill" catalog="system" width="64" height="50"/>
         <image name="cart.fill" catalog="system" width="64" height="50"/>
-        <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
         <image name="clock" catalog="system" width="64" height="60"/>
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="greaterthan.circle" catalog="system" width="64" height="60"/>
