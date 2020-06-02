@@ -1,0 +1,46 @@
+[33mcommit e7c58acc494bfac3c45325be729a5b5c92ddbc47[m[33m ([m[1;36mHEAD -> [m[1;32mandroid[m[33m, [m[1;31morigin/android[m[33m)[m
+Author: Daria Komshina <dkomshina@mail.ru>
+Date:   Fri Feb 21 22:51:06 2020 +0300
+
+    Android balance, history, thank pages are done. Market and rating pages are in progress.
+
+[33mcommit bd7813c4789e8f1e76d84c345e9786e12483c9ce[m
+Author: Taimuraz Tibilov <tvtibilov@edu.hse.ru>
+Date:   Fri Feb 21 15:55:17 2020 +0300
+
+    Structure was reorganized, authorization added, apps added, database added, models migration added
+
+[33mcommit b4e3f9ca48b4e97709f2ccf4baff7705180ff38b[m
+Merge: d20535f 8b777cb
+Author: Taimuraz Tibilov <taimuraztibilov@yandex.ru>
+Date:   Mon Jan 27 12:24:41 2020 +0000
+
+    Merge branch 'make-models-1' into 'development'
+    
+    Added some migrations, added settings of database connecting
+    
+    See merge request TaimurazTibilov/ucoin!1
+
+[33mcommit 8b777cb618404f5654d4eabee794e927eb2f084f[m[33m ([m[1;31morigin/make-models-1[m[33m)[m
+Author: Taimuraz Tibilov <taimuraztibilov@yandex.ru>
+Date:   Fri Jan 24 22:51:27 2020 +0300
+
+    Added some migrations, added settings of database connecting
+
+[33mcommit d20535f4230a5fbaff62cde3f4d67a2d63e02e43[m
+Author: Taimuraz Tibilov <taimuraztibilov@yandex.ru>
+Date:   Fri Jan 24 22:49:20 2020 +0300
+
+    .gitignore Modified
+
+[33mcommit 68fbfba758625a61f0d2fb7f150725347a0f3424[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Taimuraz Tibilov <taimuraztibilov@yandex.ru>
+Date:   Fri Jan 17 12:42:52 2020 +0300
+
+    Added gitignore
+
+[33mcommit 421d7dd53cb4c3f3dfcd762a9fd1d5462a5d3582[m
+Author: Taimuraz Tibilov <taimuraztibilov@yandex.ru>
+Date:   Fri Jan 17 12:39:06 2020 +0300
+
+    Initial commit

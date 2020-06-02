@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bxq-5I-IIi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Баланс-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="BalanceViewController" customModule="UCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilx-BF-saN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+                                <color key="backgroundColor" red="0.6588235294" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="66j-cZ-QM8"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Таймураз Тибилов">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="32" name="Thonburi-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="16" headIndent="16" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fR-sU-8C8">
+                                <rect key="frame" x="7" y="165" width="400" height="648"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up.arrow.down.circle.fill" catalog="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GAm-17-CiP">
+                                        <rect key="frame" x="8" y="137" width="64" height="64"/>
+                                        <color key="tintColor" red="0.87843137250000003" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="DJj-2f-tob"/>
+                                            <constraint firstAttribute="width" constant="64" id="RE0-Cn-VqI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="u.circle.fill" catalog="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vVe-cU-V8i">
+                                        <rect key="frame" x="8" y="210" width="64" height="64"/>
+                                        <color key="tintColor" red="0.87843137250000003" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="aSh-Lf-9KE"/>
+                                            <constraint firstAttribute="width" constant="64" id="fOM-CO-zOX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDV-GK-taQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="128"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="briefcase.fill" catalog="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwg-j7-K14">
+                                                <rect key="frame" x="8" y="9" width="64" height="64"/>
+                                                <color key="tintColor" red="0.87843137250000003" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="66" id="XFe-Oz-OVe"/>
+                                                    <constraint firstAttribute="width" constant="64" id="YPe-ZG-gvn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Следующее зачисление:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTx-kz-nv3">
+                                                <rect key="frame" x="80" y="8" width="291.5" height="66"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06.06.2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMl-nv-gIs">
+                                                <rect key="frame" x="8" y="82" width="188" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="188" id="g12-DP-sXE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+10 000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WB6-r4-i25">
+                                                <rect key="frame" x="143" y="82" width="248" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="248" id="3Og-Jy-fDr"/>
+                                                    <constraint firstAttribute="height" constant="38" id="qLs-Io-D5N"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="24"/>
+                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="sTx-kz-nv3" secondAttribute="trailing" constant="28.5" id="G2m-cI-dAT"/>
+                                            <constraint firstItem="qwg-j7-K14" firstAttribute="leading" secondItem="fDV-GK-taQ" secondAttribute="leading" constant="8" id="NIb-HH-sad"/>
+                                            <constraint firstAttribute="trailing" secondItem="WB6-r4-i25" secondAttribute="trailing" constant="9" id="Uhc-nE-SfA"/>
+                                            <constraint firstAttribute="bottom" secondItem="sTx-kz-nv3" secondAttribute="bottom" constant="54" id="WJb-ew-DxH"/>
+                                            <constraint firstItem="ZMl-nv-gIs" firstAttribute="leading" secondItem="fDV-GK-taQ" secondAttribute="leading" constant="8" id="acr-wE-RcL"/>
+                                            <constraint firstAttribute="bottom" secondItem="WB6-r4-i25" secondAttribute="bottom" constant="8" id="bGl-OI-TPj"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZMl-nv-gIs" secondAttribute="bottom" constant="8" id="cam-RV-fKM"/>
+                                            <constraint firstItem="ZMl-nv-gIs" firstAttribute="top" secondItem="qwg-j7-K14" secondAttribute="bottom" constant="8" id="hGf-eX-R4f"/>
+                                            <constraint firstAttribute="height" constant="128" id="rRV-0G-uBZ"/>
+                                            <constraint firstItem="sTx-kz-nv3" firstAttribute="leading" secondItem="fDV-GK-taQ" secondAttribute="leading" constant="80" id="tCZ-Xu-wdh"/>
+                                            <constraint firstItem="qwg-j7-K14" firstAttribute="top" secondItem="fDV-GK-taQ" secondAttribute="top" constant="8" id="v2Y-q9-1b8"/>
+                                            <constraint firstItem="sTx-kz-nv3" firstAttribute="top" secondItem="fDV-GK-taQ" secondAttribute="top" constant="8" id="x8M-mw-zOd"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Счет для переводов" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaK-sC-ipP">
+                                        <rect key="frame" x="80" y="137" width="241" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="Zal-F6-daA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Счет для покупок" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJY-0u-TgF">
+                                        <rect key="frame" x="80" y="210" width="241" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="tGF-qj-HDd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liI-ZR-Bie">
+                                        <rect key="frame" x="255" y="148" width="137" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="137" id="8IP-8v-MJv"/>
+                                            <constraint firstAttribute="height" constant="42" id="Xt2-gk-R6P"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NP-k0-RNU">
+                                        <rect key="frame" x="255" y="221" width="137" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="IKg-39-jq6"/>
+                                            <constraint firstAttribute="width" constant="137" id="RQr-wm-sA5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                        <color key="textColor" red="0.12667803699999999" green="0.75294117647058822" blue="0.12667803699999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="liI-ZR-Bie" firstAttribute="top" secondItem="fDV-GK-taQ" secondAttribute="bottom" constant="20" id="1J1-FN-elB"/>
+                                    <constraint firstItem="bJY-0u-TgF" firstAttribute="top" secondItem="aaK-sC-ipP" secondAttribute="bottom" constant="9" id="Dbj-2f-nRz"/>
+                                    <constraint firstItem="liI-ZR-Bie" firstAttribute="leading" secondItem="aaK-sC-ipP" secondAttribute="trailing" constant="-66" id="LRx-52-L3i"/>
+                                    <constraint firstItem="vVe-cU-V8i" firstAttribute="top" secondItem="GAm-17-CiP" secondAttribute="bottom" constant="8" id="Ofx-UK-Lgg"/>
+                                    <constraint firstAttribute="trailing" secondItem="fDV-GK-taQ" secondAttribute="trailing" id="RzC-fz-lss"/>
+                                    <constraint firstItem="1NP-k0-RNU" firstAttribute="top" secondItem="liI-ZR-Bie" secondAttribute="bottom" constant="31" id="TU1-ij-ip8"/>
+                                    <constraint firstItem="1NP-k0-RNU" firstAttribute="leading" secondItem="bJY-0u-TgF" secondAttribute="trailing" constant="-66" id="ZDI-kR-ZUQ"/>
+                                    <constraint firstItem="aaK-sC-ipP" firstAttribute="leading" secondItem="GAm-17-CiP" secondAttribute="trailing" constant="8" id="bpO-0X-Lcz"/>
+                                    <constraint firstAttribute="trailing" secondItem="liI-ZR-Bie" secondAttribute="trailing" constant="8" id="d53-wk-dbs"/>
+                                    <constraint firstItem="fDV-GK-taQ" firstAttribute="top" secondItem="5fR-sU-8C8" secondAttribute="top" id="eGC-1Q-Gjg"/>
+                                    <constraint firstAttribute="trailing" secondItem="1NP-k0-RNU" secondAttribute="trailing" constant="8" id="fHL-qu-6CK"/>
+                                    <constraint firstItem="fDV-GK-taQ" firstAttribute="leading" secondItem="5fR-sU-8C8" secondAttribute="leading" id="jhY-MV-n2p"/>
+                                    <constraint firstItem="GAm-17-CiP" firstAttribute="leading" secondItem="5fR-sU-8C8" secondAttribute="leading" constant="8" id="k0c-Sx-Idg"/>
+                                    <constraint firstItem="aaK-sC-ipP" firstAttribute="top" secondItem="fDV-GK-taQ" secondAttribute="bottom" constant="9" id="kzJ-rg-LGw"/>
+                                    <constraint firstItem="GAm-17-CiP" firstAttribute="top" secondItem="fDV-GK-taQ" secondAttribute="bottom" constant="8.5" id="oi3-Ec-ti7"/>
+                                    <constraint firstItem="vVe-cU-V8i" firstAttribute="leading" secondItem="5fR-sU-8C8" secondAttribute="leading" constant="8" id="p7G-OH-KfW"/>
+                                    <constraint firstItem="bJY-0u-TgF" firstAttribute="leading" secondItem="vVe-cU-V8i" secondAttribute="trailing" constant="8" id="wBN-Zi-87e"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Департамент больших данных" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fb-E7-Tf8">
+                                <rect key="frame" x="20" y="121" width="387" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QRz-cG-yPF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kse-H3-bTq">
+                                <rect key="frame" x="341" y="44" width="53" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="IZV-Te-HkO"/>
+                                    <constraint firstAttribute="height" constant="49.5" id="s1w-F6-L7c"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="gear" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="4fb-E7-Tf8" secondAttribute="trailing" constant="7" id="4wT-gX-MZo"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="5fR-sU-8C8" secondAttribute="trailing" constant="7" id="6UJ-ez-jDb"/>
+                            <constraint firstItem="4fb-E7-Tf8" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="9Xm-8b-F0N"/>
+                            <constraint firstItem="5fR-sU-8C8" firstAttribute="top" secondItem="Ilx-BF-saN" secondAttribute="bottom" constant="8" id="RU3-Ai-WCv"/>
+                            <constraint firstItem="Ilx-BF-saN" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="flg-1U-xGP"/>
+                            <constraint firstItem="5fR-sU-8C8" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="fpL-sZ-TJ0"/>
+                            <constraint firstItem="Ilx-BF-saN" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="gGB-G6-FSB"/>
+                            <constraint firstItem="5fR-sU-8C8" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="7" id="lVG-Az-6Cg"/>
+                            <constraint firstItem="Ilx-BF-saN" firstAttribute="top" secondItem="Kse-H3-bTq" secondAttribute="bottom" constant="-93.5" id="pN1-Wf-Pze"/>
+                            <constraint firstItem="Ilx-BF-saN" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="vqQ-B8-RwZ"/>
+                            <constraint firstItem="4fb-E7-Tf8" firstAttribute="top" secondItem="Ilx-BF-saN" secondAttribute="bottom" constant="-36" id="yzA-dV-eyJ"/>
+                            <constraint firstItem="Kse-H3-bTq" firstAttribute="leading" secondItem="Ilx-BF-saN" secondAttribute="trailing" constant="-73" id="zy9-yQ-PPK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Баланс" image="person.crop.circle.fill" catalog="system" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="activeBalance" destination="1NP-k0-RNU" id="VdY-go-HBz"/>
+                        <outlet property="dateOfIncome" destination="ZMl-nv-gIs" id="qoc-84-2LK"/>
+                        <outlet property="incomeSize" destination="WB6-r4-i25" id="k2X-C5-8Zs"/>
+                        <outlet property="nameSurname" destination="Ilx-BF-saN" id="Nmw-BN-eo6"/>
+                        <outlet property="nextIncome" destination="fDV-GK-taQ" id="tfn-Aw-wvN"/>
+                        <outlet property="transactionBalance" destination="liI-ZR-Bie" id="x0d-We-5Tq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.375" y="407.74647887323943"/>
+        </scene>
+        <!--Магазин-->
+        <scene sceneID="vAf-ia-pnL">
+            <objects>
+                <viewController id="CvV-mB-dOa" customClass="MarketViewController" customModule="UCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7YF-yT-bht">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9l-fj-0F4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="11f-eY-icF"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Магазин">
+                                        <attributes>
+                                            <color key="NSColor" red="0.6588235294" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="32" name="Thonburi-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="16" lineHeightMultiple="2" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZ0-20-2NY">
+                                <rect key="frame" x="0.0" y="98" width="414" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8If-I6-08f" firstAttribute="trailing" secondItem="V9l-fj-0F4" secondAttribute="trailing" id="1xM-Qg-3I7"/>
+                            <constraint firstItem="8If-I6-08f" firstAttribute="bottom" secondItem="sZ0-20-2NY" secondAttribute="bottom" id="BI9-YY-6jQ"/>
+                            <constraint firstItem="sZ0-20-2NY" firstAttribute="top" secondItem="V9l-fj-0F4" secondAttribute="bottom" constant="8" id="Ccx-E8-YDP"/>
+                            <constraint firstItem="8If-I6-08f" firstAttribute="trailing" secondItem="sZ0-20-2NY" secondAttribute="trailing" id="IRx-BW-upa"/>
+                            <constraint firstItem="V9l-fj-0F4" firstAttribute="centerX" secondItem="8If-I6-08f" secondAttribute="centerX" id="Uhz-Ip-39f"/>
+                            <constraint firstItem="V9l-fj-0F4" firstAttribute="leading" secondItem="8If-I6-08f" secondAttribute="leading" id="Xv9-8E-Rbx"/>
+                            <constraint firstItem="8If-I6-08f" firstAttribute="top" secondItem="V9l-fj-0F4" secondAttribute="top" constant="44" id="mxf-lQ-IcW"/>
+                            <constraint firstItem="sZ0-20-2NY" firstAttribute="centerX" secondItem="8If-I6-08f" secondAttribute="centerX" id="weh-HN-5Iy"/>
+                            <constraint firstItem="sZ0-20-2NY" firstAttribute="leading" secondItem="8If-I6-08f" secondAttribute="leading" id="xVe-cn-PAC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8If-I6-08f"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Магазин" image="cart.fill" catalog="system" id="wkH-qJ-1PZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wiE-hQ-Y4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1655.072463768116" y="-320.08928571428572"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="n6H-gm-QUU">
+            <objects>
+                <viewController id="icf-9M-1Bx" customClass="RegistrationViewController" customModule="UCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i2y-CS-IHm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qcc-1o-Oem">
+                                <rect key="frame" x="20" y="123" width="374" height="641"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Wo-lR-phR">
+                                        <rect key="frame" x="8" y="101" width="358" height="84"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email сотрудника" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5q-Pa-aSB">
+                                                <rect key="frame" x="8" y="0.0" width="342" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="iBg-mh-7Lr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="14"/>
+                                                <color key="textColor" white="0.330078125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example@unicredit.com" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="PhS-lh-yDZ">
+                                                <rect key="frame" x="8" y="29" width="342" height="35"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="PhS-lh-yDZ" secondAttribute="bottom" constant="20" id="bkD-pO-zCG"/>
+                                            <constraint firstItem="PhS-lh-yDZ" firstAttribute="top" secondItem="V5q-Pa-aSB" secondAttribute="bottom" constant="8" symbolic="YES" id="gBD-Px-vZY"/>
+                                            <constraint firstItem="V5q-Pa-aSB" firstAttribute="leading" secondItem="0Wo-lR-phR" secondAttribute="leadingMargin" id="gCa-4I-AGT"/>
+                                            <constraint firstItem="V5q-Pa-aSB" firstAttribute="trailing" secondItem="PhS-lh-yDZ" secondAttribute="trailing" id="i3v-Xb-sH8"/>
+                                            <constraint firstItem="V5q-Pa-aSB" firstAttribute="trailing" secondItem="0Wo-lR-phR" secondAttribute="trailingMargin" id="kGw-pZ-kfg"/>
+                                            <constraint firstItem="V5q-Pa-aSB" firstAttribute="leading" secondItem="PhS-lh-yDZ" secondAttribute="leading" id="sQ4-cG-Bp0"/>
+                                            <constraint firstItem="V5q-Pa-aSB" firstAttribute="top" secondItem="0Wo-lR-phR" secondAttribute="top" id="yhr-2E-2vy"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRS-z8-xPd">
+                                        <rect key="frame" x="8" y="285" width="358" height="84"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Повторите пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqe-d1-fAA">
+                                                <rect key="frame" x="8" y="0.0" width="342" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="vEB-in-Rxf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="14"/>
+                                                <color key="textColor" white="0.330078125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ssa-UN-EfI">
+                                                <rect key="frame" x="8" y="29" width="342" height="35"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Bqe-d1-fAA" firstAttribute="leading" secondItem="iRS-z8-xPd" secondAttribute="leadingMargin" id="ByY-s4-uMd"/>
+                                            <constraint firstItem="Ssa-UN-EfI" firstAttribute="top" secondItem="Bqe-d1-fAA" secondAttribute="bottom" constant="8" symbolic="YES" id="Dea-Qm-060"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ssa-UN-EfI" secondAttribute="bottom" constant="20" id="WJE-GC-vEn"/>
+                                            <constraint firstItem="Bqe-d1-fAA" firstAttribute="leading" secondItem="Ssa-UN-EfI" secondAttribute="leading" id="XoD-Ki-av1"/>
+                                            <constraint firstItem="Bqe-d1-fAA" firstAttribute="trailing" secondItem="Ssa-UN-EfI" secondAttribute="trailing" id="aaR-Ju-PpG"/>
+                                            <constraint firstItem="Bqe-d1-fAA" firstAttribute="trailing" secondItem="iRS-z8-xPd" secondAttribute="trailingMargin" id="dh9-41-14z"/>
+                                            <constraint firstItem="Bqe-d1-fAA" firstAttribute="top" secondItem="iRS-z8-xPd" secondAttribute="top" id="wOe-Pg-Zhm"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РЕГИСТРАЦИЯ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxC-Pf-176">
+                                        <rect key="frame" x="74" y="30" width="226" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="CNZ-AQ-WuY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="32"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzn-Z2-vHh">
+                                        <rect key="frame" x="85" y="558" width="205" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="sbo-WQ-zP9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                        <state key="normal" title="Назад">
+                                            <color key="titleColor" red="0.25098039220000001" green="0.50196078430000002" blue="0.94917231800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="icf-9M-1Bx" eventType="touchUpInside" id="djA-Wo-7LK"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fU-CT-O6y">
+                                        <rect key="frame" x="8" y="193" width="358" height="84"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbO-Vo-RDM">
+                                                <rect key="frame" x="8" y="0.0" width="342" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="AlZ-fd-QiD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="14"/>
+                                                <color key="textColor" white="0.330078125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Не менее 6-ти символов" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="KRY-is-jGB">
+                                                <rect key="frame" x="8" y="29" width="342" height="35"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="vbO-Vo-RDM" firstAttribute="leading" secondItem="8fU-CT-O6y" secondAttribute="leadingMargin" id="H1H-gd-4Gk"/>
+                                            <constraint firstItem="vbO-Vo-RDM" firstAttribute="leading" secondItem="KRY-is-jGB" secondAttribute="leading" id="LsL-Qt-RMM"/>
+                                            <constraint firstAttribute="bottom" secondItem="KRY-is-jGB" secondAttribute="bottom" constant="20" id="PTX-I4-x0c"/>
+                                            <constraint firstItem="vbO-Vo-RDM" firstAttribute="top" secondItem="8fU-CT-O6y" secondAttribute="top" id="h0Y-Yr-Xij"/>
+                                            <constraint firstItem="vbO-Vo-RDM" firstAttribute="trailing" secondItem="8fU-CT-O6y" secondAttribute="trailingMargin" id="jlE-eB-2Vt"/>
+                                            <constraint firstItem="KRY-is-jGB" firstAttribute="top" secondItem="vbO-Vo-RDM" secondAttribute="bottom" constant="8" symbolic="YES" id="tzt-YQ-GUl"/>
+                                            <constraint firstItem="vbO-Vo-RDM" firstAttribute="trailing" secondItem="KRY-is-jGB" secondAttribute="trailing" id="xTE-2X-Wkq"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pG8-uA-aWz">
+                                        <rect key="frame" x="54" y="494" width="266" height="50"/>
+                                        <color key="backgroundColor" red="0.25098039220000001" green="0.50196078430000002" blue="0.94917231800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="266" id="61k-jN-fh7"/>
+                                            <constraint firstAttribute="height" constant="50" id="Wty-Yc-moD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                        <state key="normal" title="Зарегистрироваться">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="OxC-Pf-176" firstAttribute="top" secondItem="qcc-1o-Oem" secondAttribute="top" constant="30" id="1oA-fD-EPj"/>
+                                    <constraint firstItem="pzn-Z2-vHh" firstAttribute="top" secondItem="pG8-uA-aWz" secondAttribute="bottom" constant="14" id="2bb-CB-9jw"/>
+                                    <constraint firstItem="0Wo-lR-phR" firstAttribute="leading" secondItem="qcc-1o-Oem" secondAttribute="leadingMargin" id="7bs-VK-FKz"/>
+                                    <constraint firstItem="8fU-CT-O6y" firstAttribute="trailing" secondItem="iRS-z8-xPd" secondAttribute="trailing" id="7ek-eR-jSL"/>
+                                    <constraint firstItem="0Wo-lR-phR" firstAttribute="trailing" secondItem="8fU-CT-O6y" secondAttribute="trailing" id="9mm-y4-7aS"/>
+                                    <constraint firstItem="iRS-z8-xPd" firstAttribute="centerX" secondItem="pG8-uA-aWz" secondAttribute="centerX" id="K0m-pj-W79"/>
+                                    <constraint firstItem="8fU-CT-O6y" firstAttribute="top" secondItem="0Wo-lR-phR" secondAttribute="bottom" constant="8" symbolic="YES" id="OIa-ZW-yfP"/>
+                                    <constraint firstItem="pG8-uA-aWz" firstAttribute="centerX" secondItem="pzn-Z2-vHh" secondAttribute="centerX" id="PQz-hz-Z5h"/>
+                                    <constraint firstItem="0Wo-lR-phR" firstAttribute="trailing" secondItem="qcc-1o-Oem" secondAttribute="trailingMargin" id="WWC-Xu-WK4"/>
+                                    <constraint firstItem="iRS-z8-xPd" firstAttribute="top" secondItem="8fU-CT-O6y" secondAttribute="bottom" constant="8" symbolic="YES" id="Xbr-0E-P60"/>
+                                    <constraint firstAttribute="bottom" secondItem="pzn-Z2-vHh" secondAttribute="bottom" constant="33" id="ZFS-dr-6hp"/>
+                                    <constraint firstItem="8fU-CT-O6y" firstAttribute="leading" secondItem="iRS-z8-xPd" secondAttribute="leading" id="bOn-DL-kJ5"/>
+                                    <constraint firstItem="0Wo-lR-phR" firstAttribute="top" secondItem="OxC-Pf-176" secondAttribute="bottom" constant="17" id="jQf-dX-t4o"/>
+                                    <constraint firstItem="OxC-Pf-176" firstAttribute="centerX" secondItem="0Wo-lR-phR" secondAttribute="centerX" id="sBF-JU-xl3"/>
+                                    <constraint firstItem="0Wo-lR-phR" firstAttribute="leading" secondItem="8fU-CT-O6y" secondAttribute="leading" id="vgi-2a-2af"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6588235294" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Itf-eT-8hg" firstAttribute="bottom" secondItem="qcc-1o-Oem" secondAttribute="bottom" constant="98" id="Hf7-Nd-rnd"/>
+                            <constraint firstItem="qcc-1o-Oem" firstAttribute="leading" secondItem="i2y-CS-IHm" secondAttribute="leadingMargin" id="QW5-jr-JcV"/>
+                            <constraint firstItem="qcc-1o-Oem" firstAttribute="trailing" secondItem="i2y-CS-IHm" secondAttribute="trailingMargin" id="TBl-Ep-gYW"/>
+                            <constraint firstItem="qcc-1o-Oem" firstAttribute="top" secondItem="Itf-eT-8hg" secondAttribute="top" constant="35" id="fVo-ub-Wll"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Itf-eT-8hg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vRw-f8-6nE"/>
+                    <connections>
+                        <outlet property="emailField" destination="PhS-lh-yDZ" id="8uQ-RT-sDP"/>
+                        <outlet property="passwordField" destination="KRY-is-jGB" id="oYV-Dn-cse"/>
+                        <outlet property="registerButton" destination="pG8-uA-aWz" id="JW4-1k-MeV"/>
+                        <outlet property="registrationView" destination="qcc-1o-Oem" id="9Rx-Uo-QEn"/>
+                        <outlet property="repeatPasswordField" destination="Ssa-UN-EfI" id="bza-YR-hGk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxu-OG-2WX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1259.4202898550725" y="407.8125"/>
+        </scene>
+        <!--Поблагодарить-->
+        <scene sceneID="Q2c-I4-1Ou">
+            <objects>
+                <viewController id="fV4-24-Lo3" customClass="TransactionViewController" customModule="UCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="roa-dP-xD7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83C-68-FYd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="hDZ-8F-iDs"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Поблагодарить">
+                                        <attributes>
+                                            <color key="NSColor" red="0.6588235294" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="32" name="Thonburi-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="16" lineHeightMultiple="2" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h05-2s-MRt">
+                                <rect key="frame" x="0.0" y="98" width="414" height="715"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Cr-2x-EUz">
+                                        <rect key="frame" x="0.0" y="84" width="414" height="631"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="109" id="yxZ-R7-9AZ" customClass="PersonViewCell" customModule="UCoin" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="109"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yxZ-R7-9AZ" id="zkO-Ju-aNh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нуртдинов Ренат" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAm-bo-feA">
+                                                            <rect key="frame" x="20" y="11" width="316" height="56"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="316" id="paT-yp-A8q"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                            <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Департамент мобильной разработки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVr-iY-EOR">
+                                                            <rect key="frame" x="20" y="65" width="316" height="33"/>
+                                                            <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greaterthan.circle" catalog="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zSO-kQ-c1B">
+                                                            <rect key="frame" x="344" y="11" width="50" height="87"/>
+                                                            <color key="tintColor" red="0.87843137250000003" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="JAm-bo-feA" firstAttribute="leading" secondItem="yVr-iY-EOR" secondAttribute="leading" id="0bI-GW-ZGy"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="JAm-bo-feA" secondAttribute="bottom" constant="31" id="B4L-t7-weO"/>
+                                                        <constraint firstItem="zSO-kQ-c1B" firstAttribute="top" secondItem="zkO-Ju-aNh" secondAttribute="topMargin" constant="-0.5" id="GoX-pK-aPR"/>
+                                                        <constraint firstItem="zSO-kQ-c1B" firstAttribute="leading" secondItem="JAm-bo-feA" secondAttribute="trailing" constant="8" id="Nd1-7u-6XV"/>
+                                                        <constraint firstItem="zSO-kQ-c1B" firstAttribute="centerY" secondItem="zkO-Ju-aNh" secondAttribute="centerY" id="O9h-6C-fF8"/>
+                                                        <constraint firstItem="yVr-iY-EOR" firstAttribute="top" secondItem="zkO-Ju-aNh" secondAttribute="topMargin" constant="54" id="UUO-6l-9VD"/>
+                                                        <constraint firstItem="yVr-iY-EOR" firstAttribute="bottom" secondItem="zkO-Ju-aNh" secondAttribute="bottomMargin" id="VMF-eM-OPs"/>
+                                                        <constraint firstItem="JAm-bo-feA" firstAttribute="trailing" secondItem="yVr-iY-EOR" secondAttribute="trailing" id="eKQ-L3-ChK"/>
+                                                        <constraint firstItem="JAm-bo-feA" firstAttribute="top" secondItem="zkO-Ju-aNh" secondAttribute="topMargin" id="i3F-Xq-eNZ"/>
+                                                        <constraint firstItem="zSO-kQ-c1B" firstAttribute="trailing" secondItem="zkO-Ju-aNh" secondAttribute="trailingMargin" id="vxP-hF-mD0"/>
+                                                        <constraint firstItem="JAm-bo-feA" firstAttribute="leading" secondItem="zkO-Ju-aNh" secondAttribute="leadingMargin" id="xTD-Pa-qdU"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="email" destination="yVr-iY-EOR" id="pLW-WW-HlY"/>
+                                                    <outlet property="personName" destination="JAm-bo-feA" id="out-cS-Txo"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите фамилию и имя" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="5mP-Rn-je3">
+                                        <rect key="frame" x="50" y="36" width="356" height="35"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="surnameChanged:" destination="fV4-24-Lo3" eventType="editingChanged" id="94n-Bu-99Y"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="v9h-dq-wTP">
+                                        <rect key="frame" x="8" y="37" width="41" height="33"/>
+                                        <color key="tintColor" red="0.87843137250000003" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="9hE-ac-2Yr"/>
+                                            <constraint firstAttribute="width" constant="41" id="gDo-o3-Kln"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Найти сотрудника" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibN-sy-i7B">
+                                        <rect key="frame" x="50" y="0.0" width="356" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="W3P-xd-He4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="16"/>
+                                        <color key="textColor" white="0.330078125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="5mP-Rn-je3" firstAttribute="top" secondItem="ibN-sy-i7B" secondAttribute="bottom" constant="7" id="6tO-O8-xLL"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Cr-2x-EUz" secondAttribute="trailing" id="GST-xo-SeE"/>
+                                    <constraint firstItem="5mP-Rn-je3" firstAttribute="top" secondItem="v9h-dq-wTP" secondAttribute="top" id="P69-B1-Mo2"/>
+                                    <constraint firstItem="6Cr-2x-EUz" firstAttribute="leading" secondItem="h05-2s-MRt" secondAttribute="leading" id="RdY-EH-LRr"/>
+                                    <constraint firstItem="6Cr-2x-EUz" firstAttribute="top" secondItem="5mP-Rn-je3" secondAttribute="bottom" constant="13" id="T4c-eW-OhE"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Cr-2x-EUz" secondAttribute="bottom" id="VYa-Mm-rBg"/>
+                                    <constraint firstItem="5mP-Rn-je3" firstAttribute="trailing" secondItem="h05-2s-MRt" secondAttribute="trailingMargin" id="WJp-GW-GVi"/>
+                                    <constraint firstItem="5mP-Rn-je3" firstAttribute="leading" secondItem="v9h-dq-wTP" secondAttribute="trailing" constant="1" id="f4f-Rd-U4W"/>
+                                    <constraint firstItem="5mP-Rn-je3" firstAttribute="trailing" secondItem="ibN-sy-i7B" secondAttribute="trailing" id="ig1-sv-lO6"/>
+                                    <constraint firstItem="ibN-sy-i7B" firstAttribute="top" secondItem="h05-2s-MRt" secondAttribute="top" id="kAh-kj-3VS"/>
+                                    <constraint firstItem="v9h-dq-wTP" firstAttribute="leading" secondItem="h05-2s-MRt" secondAttribute="leading" constant="8" id="ldF-4R-BZ2"/>
+                                    <constraint firstItem="5mP-Rn-je3" firstAttribute="leading" secondItem="ibN-sy-i7B" secondAttribute="leading" id="p4j-P8-BiC"/>
+                                    <constraint firstItem="6Cr-2x-EUz" firstAttribute="centerX" secondItem="h05-2s-MRt" secondAttribute="centerX" id="sVD-V8-JFp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="h05-2s-MRt" firstAttribute="top" secondItem="83C-68-FYd" secondAttribute="bottom" constant="8" id="6Oe-TB-h6T"/>
+                            <constraint firstItem="83C-68-FYd" firstAttribute="centerX" secondItem="h05-2s-MRt" secondAttribute="centerX" id="82n-Kw-ng2"/>
+                            <constraint firstItem="T4X-6N-0vB" firstAttribute="bottom" secondItem="h05-2s-MRt" secondAttribute="bottom" id="9Nq-np-98d"/>
+                            <constraint firstItem="83C-68-FYd" firstAttribute="centerX" secondItem="T4X-6N-0vB" secondAttribute="centerX" id="BBf-rr-h5d"/>
+                            <constraint firstItem="T4X-6N-0vB" firstAttribute="trailing" secondItem="83C-68-FYd" secondAttribute="trailing" id="Cwe-dN-oEL"/>
+                            <constraint firstItem="83C-68-FYd" firstAttribute="leading" secondItem="T4X-6N-0vB" secondAttribute="leading" id="Eei-Oq-TaK"/>
+                            <constraint firstItem="T4X-6N-0vB" firstAttribute="trailing" secondItem="h05-2s-MRt" secondAttribute="trailing" id="X8B-zz-ZlZ"/>
+                            <constraint firstItem="83C-68-FYd" firstAttribute="top" secondItem="roa-dP-xD7" secondAttribute="topMargin" constant="-44" id="fFS-sP-9Xm"/>
+                            <constraint firstItem="h05-2s-MRt" firstAttribute="leading" secondItem="T4X-6N-0vB" secondAttribute="leading" id="zZ6-q7-FqY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T4X-6N-0vB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Поблагодарить" image="smiley" catalog="system" id="eQz-5b-M13"/>
+                    <connections>
+                        <outlet property="findByNameField" destination="5mP-Rn-je3" id="aD8-og-bIy"/>
+                        <outlet property="personsTable" destination="6Cr-2x-EUz" id="CyO-om-hqA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GrV-UT-zse" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-259.4202898550725" y="407.8125"/>
+        </scene>
+        <!--Person Transaction View Controller-->
+        <scene sceneID="bbU-u3-xaY">
+            <objects>
+                <viewController storyboardIdentifier="PersonSendingView" id="TCR-bJ-sCR" customClass="PersonTransactionViewController" customModule="UCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gh3-X5-p2V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPF-BW-RXa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Fsr-ca-irw"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Поблагодарить">
+                                        <attributes>
+                                            <color key="NSColor" red="0.6588235294" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="32" name="Thonburi-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="16" lineHeightMultiple="2" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zA3-BD-9cF">
+                                <rect key="frame" x="0.0" y="98" width="414" height="715"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите сумму" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="XKG-27-oqY">
+                                        <rect key="frame" x="27" y="131" width="360" height="35"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма перевода" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPo-78-NhX">
+                                        <rect key="frame" x="27" y="102" width="119.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="KQN-6O-uDN"/>
+                                            <constraint firstAttribute="width" constant="119.5" id="l9I-C0-Ve6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="14"/>
+                                        <color key="textColor" white="0.330078125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pId-Bd-GbI">
+                                        <rect key="frame" x="27" y="224" width="360" height="285"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Комментарий" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLY-FL-Tfh">
+                                        <rect key="frame" x="27" y="195" width="119.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="OsK-dV-aWc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="14"/>
+                                        <color key="textColor" white="0.330078125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нуртдинова Рената" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctO-1F-hRc">
+                                        <rect key="frame" x="27" y="8" width="360" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="W3l-Ty-2Vo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kb-Pj-fZX">
+                                        <rect key="frame" x="133" y="561" width="148" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="148" id="9Nv-eZ-bTP"/>
+                                            <constraint firstAttribute="height" constant="50" id="ZIQ-dW-oFo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                        <state key="normal" title="Перевести">
+                                            <color key="titleColor" red="0.25098039220000001" green="0.50196078430000002" blue="0.94917231800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ctO-1F-hRc" firstAttribute="centerX" secondItem="zA3-BD-9cF" secondAttribute="centerX" id="2KJ-PH-ctf"/>
+                                    <constraint firstItem="XKG-27-oqY" firstAttribute="leading" secondItem="MLY-FL-Tfh" secondAttribute="leading" id="4ab-Yl-NfB"/>
+                                    <constraint firstItem="ctO-1F-hRc" firstAttribute="leading" secondItem="gPo-78-NhX" secondAttribute="leading" id="AGX-Ss-Spb"/>
+                                    <constraint firstItem="gPo-78-NhX" firstAttribute="top" secondItem="ctO-1F-hRc" secondAttribute="bottom" constant="14" id="LA8-hR-B9d"/>
+                                    <constraint firstItem="ctO-1F-hRc" firstAttribute="leading" secondItem="zA3-BD-9cF" secondAttribute="leading" constant="27" id="O0X-f5-AXa"/>
+                                    <constraint firstItem="MLY-FL-Tfh" firstAttribute="top" secondItem="XKG-27-oqY" secondAttribute="bottom" constant="29" id="S8T-e3-1SH"/>
+                                    <constraint firstItem="gPo-78-NhX" firstAttribute="leading" secondItem="XKG-27-oqY" secondAttribute="leading" id="U0y-WR-lSI"/>
+                                    <constraint firstItem="pId-Bd-GbI" firstAttribute="centerX" secondItem="1kb-Pj-fZX" secondAttribute="centerX" id="UGX-kC-LUN"/>
+                                    <constraint firstItem="pId-Bd-GbI" firstAttribute="top" secondItem="MLY-FL-Tfh" secondAttribute="bottom" constant="8" id="UvE-a9-DWw"/>
+                                    <constraint firstItem="1kb-Pj-fZX" firstAttribute="top" secondItem="pId-Bd-GbI" secondAttribute="bottom" constant="52" id="ZZd-uk-QLC"/>
+                                    <constraint firstItem="ctO-1F-hRc" firstAttribute="trailing" secondItem="XKG-27-oqY" secondAttribute="trailing" id="Zqy-ee-OIU"/>
+                                    <constraint firstItem="XKG-27-oqY" firstAttribute="top" secondItem="gPo-78-NhX" secondAttribute="bottom" constant="8" id="bJt-5t-7Ld"/>
+                                    <constraint firstItem="gPo-78-NhX" firstAttribute="trailing" secondItem="MLY-FL-Tfh" secondAttribute="trailing" id="d3s-hF-x0c"/>
+                                    <constraint firstAttribute="bottom" secondItem="1kb-Pj-fZX" secondAttribute="bottom" constant="104" id="jjv-QB-pPE"/>
+                                    <constraint firstItem="XKG-27-oqY" firstAttribute="trailing" secondItem="pId-Bd-GbI" secondAttribute="trailing" id="ptb-iv-Gwd"/>
+                                    <constraint firstItem="ctO-1F-hRc" firstAttribute="top" secondItem="zA3-BD-9cF" secondAttribute="topMargin" id="vZD-LV-2mc"/>
+                                    <constraint firstItem="MLY-FL-Tfh" firstAttribute="leading" secondItem="pId-Bd-GbI" secondAttribute="leading" id="wah-Nm-UJ6"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yj-bN-wt7">
+                                <rect key="frame" x="341" y="45.5" width="53" height="48.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="mn7-3L-lb9"/>
+                                    <constraint firstAttribute="height" constant="49.5" id="z0E-K1-X9S"/>
+                                </constraints>
+                                <color key="tintColor" red="0.6588235294" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="arrowshape.turn.up.left.circle" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zA3-BD-9cF" firstAttribute="centerX" secondItem="sn7-bG-xqX" secondAttribute="centerX" id="0G3-WP-EEI"/>
+                            <constraint firstItem="zA3-BD-9cF" firstAttribute="top" secondItem="3Yj-bN-wt7" secondAttribute="bottom" constant="3.5" id="3Um-4m-f4f"/>
+                            <constraint firstItem="sn7-bG-xqX" firstAttribute="trailing" secondItem="WPF-BW-RXa" secondAttribute="trailing" id="5gn-z7-pJG"/>
+                            <constraint firstItem="zA3-BD-9cF" firstAttribute="leading" secondItem="sn7-bG-xqX" secondAttribute="leading" id="BGN-Za-LbO"/>
+                            <constraint firstItem="WPF-BW-RXa" firstAttribute="centerX" secondItem="sn7-bG-xqX" secondAttribute="centerX" id="HKu-Mf-V52"/>
+                            <constraint firstItem="zA3-BD-9cF" firstAttribute="top" secondItem="WPF-BW-RXa" secondAttribute="bottom" constant="8" id="WJA-Wk-aBm"/>
+                            <constraint firstItem="3Yj-bN-wt7" firstAttribute="trailing" secondItem="gh3-X5-p2V" secondAttribute="trailingMargin" id="Y3X-Fs-5FI"/>
+                            <constraint firstItem="sn7-bG-xqX" firstAttribute="bottom" secondItem="zA3-BD-9cF" secondAttribute="bottom" constant="49" id="lI4-g3-VOg"/>
+                            <constraint firstItem="WPF-BW-RXa" firstAttribute="leading" secondItem="sn7-bG-xqX" secondAttribute="leading" id="lQY-TO-mb7"/>
+                            <constraint firstItem="sn7-bG-xqX" firstAttribute="top" secondItem="WPF-BW-RXa" secondAttribute="top" constant="44" id="x4W-Yh-3i0"/>
+                            <constraint firstItem="sn7-bG-xqX" firstAttribute="trailing" secondItem="zA3-BD-9cF" secondAttribute="trailing" id="yW1-eH-IVd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sn7-bG-xqX"/>
+                    </view>
+                    <connections>
+                        <outlet property="amountField" destination="XKG-27-oqY" id="IZh-Qs-595"/>
+                        <outlet property="backButton" destination="3Yj-bN-wt7" id="Y78-jb-ag2"/>
+                        <outlet property="commentView" destination="pId-Bd-GbI" id="vDf-MG-SvC"/>
+                        <outlet property="mainView" destination="zA3-BD-9cF" id="WpG-0q-Ccj"/>
+                        <outlet property="receiverName" destination="ctO-1F-hRc" id="Trn-Db-bGF"/>
+                        <outlet property="sendButton" destination="1kb-Pj-fZX" id="YfR-3H-5Zg"/>
+                        <outlet property="tabName" destination="WPF-BW-RXa" id="1dt-oJ-6Bd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ho-3z-ORD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-259.4202898550725" y="1130.3571428571429"/>
+        </scene>
+        <!--История-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="HistoryViewController" customModule="UCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y58-9n-xhc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="jBV-Ky-RYp"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="История транзакций">
+                                        <attributes>
+                                            <color key="NSColor" red="0.6588235294" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="32" name="Thonburi-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="16" lineHeightMultiple="2" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dBd-X3-3VM">
+                                <rect key="frame" x="0.0" y="98" width="414" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="XUR-pa-N2r">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XUR-pa-N2r" id="Q12-GV-sme">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нет операций" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="his-ae-lBW">
+                                <rect key="frame" x="125" y="432.5" width="164" height="31.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dBd-X3-3VM" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="3M4-XQ-K09"/>
+                            <constraint firstItem="his-ae-lBW" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="9Td-bc-Pfv"/>
+                            <constraint firstItem="Y58-9n-xhc" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="BOi-EW-fly"/>
+                            <constraint firstItem="dBd-X3-3VM" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="DXP-g2-pcQ"/>
+                            <constraint firstItem="dBd-X3-3VM" firstAttribute="top" secondItem="Y58-9n-xhc" secondAttribute="bottom" constant="8" id="Ks0-mH-arM"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Y58-9n-xhc" secondAttribute="trailing" id="Peb-r2-sTq"/>
+                            <constraint firstItem="Y58-9n-xhc" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="SyV-pu-eSu"/>
+                            <constraint firstItem="his-ae-lBW" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="oIW-Nr-3mx"/>
+                            <constraint firstItem="dBd-X3-3VM" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="odJ-XZ-Eqw"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="top" secondItem="Y58-9n-xhc" secondAttribute="top" constant="44" id="qKh-lW-Iqc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="История" image="clock" catalog="system" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="noOperationsLabel" destination="his-ae-lBW" id="f44-gL-IFD"/>
+                        <outlet property="tableView" destination="dBd-X3-3VM" id="kmK-PA-fdc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2757.971014492754" y="407.8125"/>
+        </scene>
+        <!--Рейтинг-->
+        <scene sceneID="jXS-5a-2qM">
+            <objects>
+                <viewController id="uf6-5e-DMi" customClass="RatingViewController" customModule="UCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mwr-Z0-9ib">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSw-VY-2RP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Dfz-PY-55k"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Рейтинг активности">
+                                        <attributes>
+                                            <color key="NSColor" red="0.6588235294" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="32" name="Thonburi-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="16" lineHeightMultiple="2" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCk-c2-NmM">
+                                <rect key="frame" x="0.0" y="98" width="414" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pRH-Do-cZa" firstAttribute="trailing" secondItem="RSw-VY-2RP" secondAttribute="trailing" id="1ja-kw-9Y7"/>
+                            <constraint firstItem="FCk-c2-NmM" firstAttribute="top" secondItem="RSw-VY-2RP" secondAttribute="bottom" constant="8" id="5oe-KH-hXJ"/>
+                            <constraint firstItem="pRH-Do-cZa" firstAttribute="top" secondItem="RSw-VY-2RP" secondAttribute="top" constant="44" id="86c-wW-UHv"/>
+                            <constraint firstItem="FCk-c2-NmM" firstAttribute="leading" secondItem="pRH-Do-cZa" secondAttribute="leading" id="Gd0-9j-vuV"/>
+                            <constraint firstItem="pRH-Do-cZa" firstAttribute="bottom" secondItem="FCk-c2-NmM" secondAttribute="bottom" id="Jmm-37-T0K"/>
+                            <constraint firstItem="FCk-c2-NmM" firstAttribute="centerX" secondItem="pRH-Do-cZa" secondAttribute="centerX" id="LiN-C9-uGg"/>
+                            <constraint firstItem="pRH-Do-cZa" firstAttribute="trailing" secondItem="FCk-c2-NmM" secondAttribute="trailing" id="ePE-ew-Xme"/>
+                            <constraint firstItem="RSw-VY-2RP" firstAttribute="leading" secondItem="pRH-Do-cZa" secondAttribute="leading" id="lze-ao-ZNY"/>
+                            <constraint firstItem="RSw-VY-2RP" firstAttribute="centerX" secondItem="pRH-Do-cZa" secondAttribute="centerX" id="p4a-Mz-m5x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pRH-Do-cZa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Рейтинг" image="chart.bar.fill" catalog="system" id="10w-o4-3dK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fB9-4Q-aaK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1753.6231884057972" y="407.8125"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Bx3-eH-12v">
+            <objects>
+                <viewController id="VHp-FV-yzw" customClass="LoginViewController" customModule="UCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zl6-Lb-EY5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HZ-i4-B2p">
+                                <rect key="frame" x="20" y="139" width="374" height="587"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2f-2V-hpu">
+                                        <rect key="frame" x="113" y="422" width="148" height="50"/>
+                                        <color key="backgroundColor" red="0.25098039220000001" green="0.50196078430000002" blue="0.94917231800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bWM-eu-Z18"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                        <state key="normal" title="Войти">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signInButtonPressed:" destination="VHp-FV-yzw" eventType="touchUpInside" id="O8z-zk-EvV"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3l-Ij-eUF">
+                                        <rect key="frame" x="8" y="99" width="358" height="84"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email сотрудника" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnY-VC-Vlr">
+                                                <rect key="frame" x="8" y="0.0" width="119.5" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="WY8-aR-Tu8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="14"/>
+                                                <color key="textColor" white="0.330078125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example@unicredit.com" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="x7N-SL-uig">
+                                                <rect key="frame" x="8" y="29" width="342" height="35"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="x7N-SL-uig" firstAttribute="trailing" secondItem="V3l-Ij-eUF" secondAttribute="trailingMargin" id="31i-je-Qst"/>
+                                            <constraint firstItem="UnY-VC-Vlr" firstAttribute="leading" secondItem="x7N-SL-uig" secondAttribute="leading" id="6xU-QT-v3f"/>
+                                            <constraint firstItem="UnY-VC-Vlr" firstAttribute="leading" secondItem="V3l-Ij-eUF" secondAttribute="leadingMargin" id="Bh0-fS-xjB"/>
+                                            <constraint firstItem="UnY-VC-Vlr" firstAttribute="top" secondItem="V3l-Ij-eUF" secondAttribute="top" id="TRH-kB-0fj"/>
+                                            <constraint firstItem="x7N-SL-uig" firstAttribute="top" secondItem="UnY-VC-Vlr" secondAttribute="bottom" constant="8" id="cXK-Je-Hsu"/>
+                                            <constraint firstAttribute="bottom" secondItem="x7N-SL-uig" secondAttribute="bottom" constant="20" id="rwk-Am-zSn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EnI-90-0uI">
+                                        <rect key="frame" x="8" y="191" width="358" height="84"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I19-ji-eOb">
+                                                <rect key="frame" x="8" y="0.0" width="50" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Jip-e0-xYs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="14"/>
+                                                <color key="textColor" white="0.330078125" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="cfJ-nY-oJC">
+                                                <rect key="frame" x="8" y="29" width="342" height="35"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="I19-ji-eOb" firstAttribute="leading" secondItem="EnI-90-0uI" secondAttribute="leadingMargin" id="3k2-v3-5gl"/>
+                                            <constraint firstItem="I19-ji-eOb" firstAttribute="top" secondItem="EnI-90-0uI" secondAttribute="top" id="URy-Hs-Jmg"/>
+                                            <constraint firstAttribute="bottom" secondItem="cfJ-nY-oJC" secondAttribute="bottom" constant="20" id="ZMU-PN-1BQ"/>
+                                            <constraint firstItem="I19-ji-eOb" firstAttribute="leading" secondItem="cfJ-nY-oJC" secondAttribute="leading" id="dMF-JT-Hww"/>
+                                            <constraint firstItem="cfJ-nY-oJC" firstAttribute="top" secondItem="I19-ji-eOb" secondAttribute="bottom" constant="8" id="lKd-Bp-d8U"/>
+                                            <constraint firstItem="cfJ-nY-oJC" firstAttribute="trailing" secondItem="EnI-90-0uI" secondAttribute="trailingMargin" id="mMI-G5-fca"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jg7-LV-apO">
+                                        <rect key="frame" x="113" y="493" width="148" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uGH-Qj-Z52"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="24"/>
+                                        <state key="normal" title="Регистрация">
+                                            <color key="titleColor" red="0.25098039220000001" green="0.50196078430000002" blue="0.94917231800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="icf-9M-1Bx" kind="show" id="jX9-zH-4X7"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВХОД" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-oG-58S">
+                                        <rect key="frame" x="135.5" y="30" width="103" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="103" id="LOe-HE-Ngc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="32"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="V3l-Ij-eUF" firstAttribute="trailing" secondItem="EnI-90-0uI" secondAttribute="trailing" id="8y8-lz-xyc"/>
+                                    <constraint firstItem="EnI-90-0uI" firstAttribute="top" secondItem="V3l-Ij-eUF" secondAttribute="bottom" constant="8" id="9Bu-Uf-Ypd"/>
+                                    <constraint firstItem="V3l-Ij-eUF" firstAttribute="trailing" secondItem="8HZ-i4-B2p" secondAttribute="trailingMargin" id="BXy-4d-ZR2"/>
+                                    <constraint firstAttribute="bottom" secondItem="jg7-LV-apO" secondAttribute="bottom" constant="44" id="S0h-pS-deO"/>
+                                    <constraint firstItem="Z2f-2V-hpu" firstAttribute="leading" secondItem="jg7-LV-apO" secondAttribute="leading" id="SL5-In-58P"/>
+                                    <constraint firstItem="9gf-oG-58S" firstAttribute="top" secondItem="8HZ-i4-B2p" secondAttribute="top" constant="30" id="XZw-v1-t0d"/>
+                                    <constraint firstItem="jg7-LV-apO" firstAttribute="top" secondItem="Z2f-2V-hpu" secondAttribute="bottom" constant="21" id="bkE-av-azH"/>
+                                    <constraint firstItem="V3l-Ij-eUF" firstAttribute="leading" secondItem="8HZ-i4-B2p" secondAttribute="leadingMargin" id="cRk-c6-Xy4"/>
+                                    <constraint firstItem="V3l-Ij-eUF" firstAttribute="top" secondItem="9gf-oG-58S" secondAttribute="bottom" constant="27" id="ojo-9M-8Rs"/>
+                                    <constraint firstItem="V3l-Ij-eUF" firstAttribute="leading" secondItem="EnI-90-0uI" secondAttribute="leading" id="pGF-k6-c40"/>
+                                    <constraint firstItem="jg7-LV-apO" firstAttribute="centerX" secondItem="8HZ-i4-B2p" secondAttribute="centerX" id="pgI-19-3GS"/>
+                                    <constraint firstItem="9gf-oG-58S" firstAttribute="centerX" secondItem="V3l-Ij-eUF" secondAttribute="centerX" id="sJ8-wh-rSi"/>
+                                    <constraint firstItem="Z2f-2V-hpu" firstAttribute="trailing" secondItem="jg7-LV-apO" secondAttribute="trailing" id="xkc-tr-Hgk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63921568627450975" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8HZ-i4-B2p" firstAttribute="top" secondItem="gbq-dw-M8a" secondAttribute="top" constant="51" id="Bah-Kc-msr"/>
+                            <constraint firstItem="gbq-dw-M8a" firstAttribute="bottom" secondItem="8HZ-i4-B2p" secondAttribute="bottom" constant="136" id="TQY-vE-SEj"/>
+                            <constraint firstItem="8HZ-i4-B2p" firstAttribute="leading" secondItem="Zl6-Lb-EY5" secondAttribute="leadingMargin" id="psz-Q8-a7u"/>
+                            <constraint firstItem="8HZ-i4-B2p" firstAttribute="trailing" secondItem="Zl6-Lb-EY5" secondAttribute="trailingMargin" id="wOx-5h-jhD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gbq-dw-M8a"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dxh-gb-XoJ"/>
+                    <connections>
+                        <outlet property="boardView" destination="8HZ-i4-B2p" id="ubz-Vw-iV1"/>
+                        <outlet property="email" destination="x7N-SL-uig" id="CZE-4Q-9vQ"/>
+                        <outlet property="password" destination="cfJ-nY-oJC" id="OPz-Eb-Amo"/>
+                        <outlet property="registerButton" destination="jg7-LV-apO" id="OVT-Pl-HQM"/>
+                        <outlet property="signInButton" destination="Z2f-2V-hpu" id="Jj5-1H-9gd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWD-Cd-dAR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-259.4202898550725" y="-320.08928571428572"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController storyboardIdentifier="TabViewController" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.87843137250000003" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="fV4-24-Lo3" kind="relationship" relationship="viewControllers" id="WBn-nh-5IE"/>
+                        <segue destination="CvV-mB-dOa" kind="relationship" relationship="viewControllers" id="Cvj-rr-yu8"/>
+                        <segue destination="uf6-5e-DMi" kind="relationship" relationship="viewControllers" id="rRH-PM-P3Z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650.72463768115949" y="-320.08928571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ERO-lY-Nue">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bxq-5I-IIi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uei-nK-E4h">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VHp-FV-yzw" kind="relationship" relationship="rootViewController" id="EdI-9f-JXr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51L-zI-B7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1259" y="-320"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.up.arrow.down.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="arrowshape.turn.up.left.circle" catalog="system" width="64" height="60"/>
+        <image name="briefcase.fill" catalog="system" width="64" height="50"/>
+        <image name="cart.fill" catalog="system" width="64" height="50"/>
+        <image name="chart.bar.fill" catalog="system" width="64" height="44"/>
+        <image name="clock" catalog="system" width="64" height="60"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="greaterthan.circle" catalog="system" width="64" height="60"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="smiley" catalog="system" width="64" height="60"/>
+        <image name="u.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
