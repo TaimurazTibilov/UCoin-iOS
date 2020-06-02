@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bxq-5I-IIi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bxq-5I-IIi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -214,55 +214,6 @@
             </objects>
             <point key="canvasLocation" x="744.375" y="407.74647887323943"/>
         </scene>
-        <!--Магазин-->
-        <scene sceneID="vAf-ia-pnL">
-            <objects>
-                <viewController id="CvV-mB-dOa" customClass="MarketViewController" customModule="UCoin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7YF-yT-bht">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9l-fj-0F4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="11f-eY-icF"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Магазин">
-                                        <attributes>
-                                            <color key="NSColor" red="0.6588235294" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="32" name="Thonburi-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="16" lineHeightMultiple="2" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZ0-20-2NY">
-                                <rect key="frame" x="0.0" y="98" width="414" height="715"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="8If-I6-08f" firstAttribute="trailing" secondItem="V9l-fj-0F4" secondAttribute="trailing" id="1xM-Qg-3I7"/>
-                            <constraint firstItem="8If-I6-08f" firstAttribute="bottom" secondItem="sZ0-20-2NY" secondAttribute="bottom" id="BI9-YY-6jQ"/>
-                            <constraint firstItem="sZ0-20-2NY" firstAttribute="top" secondItem="V9l-fj-0F4" secondAttribute="bottom" constant="8" id="Ccx-E8-YDP"/>
-                            <constraint firstItem="8If-I6-08f" firstAttribute="trailing" secondItem="sZ0-20-2NY" secondAttribute="trailing" id="IRx-BW-upa"/>
-                            <constraint firstItem="V9l-fj-0F4" firstAttribute="centerX" secondItem="8If-I6-08f" secondAttribute="centerX" id="Uhz-Ip-39f"/>
-                            <constraint firstItem="V9l-fj-0F4" firstAttribute="leading" secondItem="8If-I6-08f" secondAttribute="leading" id="Xv9-8E-Rbx"/>
-                            <constraint firstItem="8If-I6-08f" firstAttribute="top" secondItem="V9l-fj-0F4" secondAttribute="top" constant="44" id="mxf-lQ-IcW"/>
-                            <constraint firstItem="sZ0-20-2NY" firstAttribute="centerX" secondItem="8If-I6-08f" secondAttribute="centerX" id="weh-HN-5Iy"/>
-                            <constraint firstItem="sZ0-20-2NY" firstAttribute="leading" secondItem="8If-I6-08f" secondAttribute="leading" id="xVe-cn-PAC"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="8If-I6-08f"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Магазин" image="cart.fill" catalog="system" id="wkH-qJ-1PZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wiE-hQ-Y4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1655.072463768116" y="-320.08928571428572"/>
-        </scene>
         <!--Registration View Controller-->
         <scene sceneID="n6H-gm-QUU">
             <objects>
@@ -275,7 +226,7 @@
                                 <rect key="frame" x="20" y="123" width="374" height="641"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Wo-lR-phR">
-                                        <rect key="frame" x="8" y="101" width="358" height="84"/>
+                                        <rect key="frame" x="8" y="101" width="358" height="85"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email сотрудника" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5q-Pa-aSB">
                                                 <rect key="frame" x="8" y="0.0" width="342" height="21"/>
@@ -287,7 +238,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example@unicredit.com" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="PhS-lh-yDZ">
-                                                <rect key="frame" x="8" y="29" width="342" height="35"/>
+                                                <rect key="frame" x="8" y="29" width="342" height="36"/>
                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -304,7 +255,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRS-z8-xPd">
-                                        <rect key="frame" x="8" y="285" width="358" height="84"/>
+                                        <rect key="frame" x="8" y="286" width="358" height="84"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Повторите пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqe-d1-fAA">
                                                 <rect key="frame" x="8" y="0.0" width="342" height="21"/>
@@ -355,7 +306,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fU-CT-O6y">
-                                        <rect key="frame" x="8" y="193" width="358" height="84"/>
+                                        <rect key="frame" x="8" y="194" width="358" height="84"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbO-Vo-RDM">
                                                 <rect key="frame" x="8" y="0.0" width="342" height="21"/>
@@ -466,10 +417,10 @@
                                 <rect key="frame" x="0.0" y="98" width="414" height="715"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Cr-2x-EUz">
-                                        <rect key="frame" x="0.0" y="84" width="414" height="631"/>
+                                        <rect key="frame" x="0.0" y="85" width="414" height="630"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="109" id="yxZ-R7-9AZ" customClass="PersonTableViewCell" customModule="UCoin" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="109" id="yxZ-R7-9AZ" customClass="PersonViewCell" customModule="UCoin" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="109"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yxZ-R7-9AZ" id="zkO-Ju-aNh">
@@ -485,7 +436,7 @@
                                                             <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ranurtdinov@edu.hse.ru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVr-iY-EOR">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Департамент мобильной разработки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVr-iY-EOR">
                                                             <rect key="frame" x="20" y="65" width="316" height="33"/>
                                                             <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="16"/>
                                                             <nil key="textColor"/>
@@ -518,7 +469,7 @@
                                         </prototypes>
                                     </tableView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите фамилию и имя" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="5mP-Rn-je3">
-                                        <rect key="frame" x="50" y="36" width="356" height="35"/>
+                                        <rect key="frame" x="50" y="36" width="356" height="36"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -613,7 +564,7 @@
                                 <rect key="frame" x="0.0" y="98" width="414" height="715"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите сумму" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="XKG-27-oqY">
-                                        <rect key="frame" x="27" y="131" width="360" height="35"/>
+                                        <rect key="frame" x="27" y="131" width="360" height="36"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -628,14 +579,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pId-Bd-GbI">
-                                        <rect key="frame" x="27" y="224" width="360" height="285"/>
+                                        <rect key="frame" x="27" y="225" width="360" height="284"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Комментарий" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLY-FL-Tfh">
-                                        <rect key="frame" x="27" y="195" width="119.5" height="21"/>
+                                        <rect key="frame" x="27" y="196" width="119.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="OsK-dV-aWc"/>
                                         </constraints>
@@ -821,7 +772,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3l-Ij-eUF">
-                                        <rect key="frame" x="8" y="99" width="358" height="84"/>
+                                        <rect key="frame" x="8" y="99" width="358" height="85"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email сотрудника" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnY-VC-Vlr">
                                                 <rect key="frame" x="8" y="0.0" width="119.5" height="21"/>
@@ -833,7 +784,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example@unicredit.com" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="x7N-SL-uig">
-                                                <rect key="frame" x="8" y="29" width="342" height="35"/>
+                                                <rect key="frame" x="8" y="29" width="342" height="36"/>
                                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -849,7 +800,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EnI-90-0uI">
-                                        <rect key="frame" x="8" y="191" width="358" height="84"/>
+                                        <rect key="frame" x="8" y="192" width="358" height="84"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I19-ji-eOb">
                                                 <rect key="frame" x="8" y="0.0" width="50" height="21"/>
@@ -953,7 +904,6 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="fV4-24-Lo3" kind="relationship" relationship="viewControllers" id="WBn-nh-5IE"/>
-                        <segue destination="CvV-mB-dOa" kind="relationship" relationship="viewControllers" id="Cvj-rr-yu8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -980,16 +930,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.up.arrow.down.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="arrowshape.turn.up.left.circle" catalog="system" width="64" height="60"/>
-        <image name="briefcase.fill" catalog="system" width="64" height="50"/>
-        <image name="cart.fill" catalog="system" width="64" height="50"/>
-        <image name="clock" catalog="system" width="64" height="60"/>
-        <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="greaterthan.circle" catalog="system" width="64" height="60"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
-        <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="smiley" catalog="system" width="64" height="60"/>
-        <image name="u.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="arrow.up.arrow.down.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrowshape.turn.up.left.circle" catalog="system" width="128" height="121"/>
+        <image name="briefcase.fill" catalog="system" width="128" height="102"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="greaterthan.circle" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="smiley" catalog="system" width="128" height="121"/>
+        <image name="u.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

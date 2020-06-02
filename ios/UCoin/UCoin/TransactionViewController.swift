@@ -29,32 +29,28 @@ class TransactionViewController: UIViewController, UITableViewDataSource, UITabl
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = personsTable.dequeueReusableCell(withIdentifier: cellReuseId, for: indexPath) as! PersonTableViewCell
+        let cell = personsTable.dequeueReusableCell(withIdentifier: cellReuseId, for: indexPath) as! PersonViewCell
         
-        cell.name = personsToSend[indexPath.row].name + " " + personsToSend[indexPath.row].surname
-        cell.mail = personsToSend![indexPath.row].email
+        //cell.personName.text = personsToSend[indexPath.row].name + " " + personsToSend[indexPath.row].surname
+        //cell.email.text = personsToSend![indexPath.row].email
         addShadows(view: cell)
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90.0
-    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.personsToSend = []
+        self.personsToSend = [Person]()
         initializeData()
         
         //debug version
         personsToSend?.append(Person(name: "Ренат", surname: "Нуртдинов", id: 5, email: "ranurtdinov@edu.hse.ru"))
         
-        personsTable.register(PersonTableViewCell.self, forCellReuseIdentifier: cellReuseId)
+        personsTable.register(PersonViewCell.self, forCellReuseIdentifier: cellReuseId)
         personsTable.dataSource = self
-        personsTable.delegate = self
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         view.addGestureRecognizer(tap)

@@ -8,17 +8,6 @@
 
 import UIKit
 
-enum TransactionType {
-    case outgoingTransfer
-    case incomingTransfer
-    case shopPurchase
-}
-
-enum AccountType {
-    case forTranfers
-    case forPurchases
-    case forTransfersAndForPurchases
-}
 
 class OperationTableViewCell: UITableViewCell {
     

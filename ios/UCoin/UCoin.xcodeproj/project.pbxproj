@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		650935762482C48C00CD7DE5 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650935752482C48C00CD7DE5 /* SwiftyJSON.swift */; };
-		6509357A2482E88100CD7DE5 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650935792482E88100CD7DE5 /* PersonTableViewCell.swift */; };
+		6509357A2482E88100CD7DE5 /* PersonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650935792482E88100CD7DE5 /* PersonViewCell.swift */; };
 		6509357C2482E9B000CD7DE5 /* AppDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6509357B2482E9B000CD7DE5 /* AppDataController.swift */; };
 		6509357E2482EF3B00CD7DE5 /* PersonTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6509357D2482EF3A00CD7DE5 /* PersonTransactionViewController.swift */; };
 		65398520247A715F00CB3DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6539851F247A715F00CB3DBB /* AppDelegate.swift */; };
@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		650935752482C48C00CD7DE5 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		650935792482E88100CD7DE5 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		650935792482E88100CD7DE5 /* PersonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewCell.swift; sourceTree = "<group>"; };
 		6509357B2482E9B000CD7DE5 /* AppDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataController.swift; sourceTree = "<group>"; };
 		6509357D2482EF3A00CD7DE5 /* PersonTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTransactionViewController.swift; sourceTree = "<group>"; };
 		6539851C247A715F00CB3DBB /* UCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +89,7 @@
 				65398525247A715F00CB3DBB /* HistoryViewController.swift */,
 				65398535247A792E00CB3DBB /* TransactionViewController.swift */,
 				6509357B2482E9B000CD7DE5 /* AppDataController.swift */,
-				650935792482E88100CD7DE5 /* PersonTableViewCell.swift */,
+				650935792482E88100CD7DE5 /* PersonViewCell.swift */,
 				65398527247A715F00CB3DBB /* Main.storyboard */,
 				6509357D2482EF3A00CD7DE5 /* PersonTransactionViewController.swift */,
 				6539853D247ACB2A00CB3DBB /* RegistrationViewController.swift */,
@@ -189,7 +189,7 @@
 				65398538247A797100CB3DBB /* MarketViewController.swift in Sources */,
 				65398522247A715F00CB3DBB /* SceneDelegate.swift in Sources */,
 				980B2877248416E500794A71 /* Models.swift in Sources */,
-				6509357A2482E88100CD7DE5 /* PersonTableViewCell.swift in Sources */,
+				6509357A2482E88100CD7DE5 /* PersonViewCell.swift in Sources */,
 				6539853A247A79B300CB3DBB /* RatingViewController.swift in Sources */,
 				988815DF247C79ED00779136 /* Extensions.swift in Sources */,
 				988815DD247C6E8E00779136 /* OperationTableViewCell.swift in Sources */,
