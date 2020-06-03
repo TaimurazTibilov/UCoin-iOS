@@ -22,38 +22,56 @@ class TransactionViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
+        personsTable.deselectRow(at: indexPath, animated: true)
     }
+    
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.personsToSend.count
+        //return 99999
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = personsTable.dequeueReusableCell(withIdentifier: cellReuseId, for: indexPath) as! PersonViewCell
+        //let cell = personsTable.dequeueReusableCell(withIdentifier: cellReuseId, for: indexPath) as! PersonViewCell
         
-        //cell.personName.text = personsToSend[indexPath.row].name + " " + personsToSend[indexPath.row].surname
-        //cell.email.text = personsToSend![indexPath.row].email
-        addShadows(view: cell)
+        let cell = personsTable.dequeueReusableCell(withIdentifier: cellReuseId) as! PersonViewCell
+        cell.personName = personsToSend[indexPath.row].name + " " + personsToSend[indexPath.row].surname
+        cell.email = personsToSend![indexPath.row].email
+        //addShadows(view: cell)
         
+        //cell.layoutSubviews()
+        
+        //let cell = personsTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        //cell.personName = "Александр Денисович Романов"
+        //cell.email = "adromanov@ucoin.com"
+        cell.layoutSubviews()
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.personsToSend = [Person]()
+        self.personsToSend = []
         initializeData()
         
         //debug version
-        personsToSend?.append(Person(name: "Ренат", surname: "Нуртдинов", id: 5, email: "ranurtdinov@edu.hse.ru"))
+        //personsToSend?.append(Person(name: "Ренат", surname: "Нуртдинов", id: 5, email: "ranurtdinov@edu.hse.ru"))
         
         personsTable.register(PersonViewCell.self, forCellReuseIdentifier: cellReuseId)
-        personsTable.dataSource = self
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        personsTable.dataSource = self
+        personsTable.delegate = self
+        
+        // the following code blocks selecting rows!!
+        //let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        //view.addGestureRecognizer(tap)
     }
     
     @objc func dismissKeyboard() {
@@ -82,9 +100,10 @@ class TransactionViewController: UIViewController, UITableViewDataSource, UITabl
 //            displayErrorMessage(message: "Что-то пошло не так")
 //        }
         
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        //request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        //request.addValue("application/json", forHTTPHeaderField: "Accept")
         
+        let vc = UIViewController.displaySpinner(onView: self.view, darkenBack: false)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
                 print(error?.localizedDescription ?? "No data")
@@ -110,8 +129,12 @@ class TransactionViewController: UIViewController, UITableViewDataSource, UITabl
                             self.personsToSend?.append(Person(name: personJSON["name"] as! String, surname: personJSON["surname"] as! String, id: personJSON["id"] as! Int, email: personJSON["email"] as! String))
                         }
                     }
+                    DispatchQueue.main.async {
+                        self.personsTable.reloadSections(IndexSet(integer: 0), with: .fade)
+                    }
                 }
             }
+            UIViewController.removeSpinner(spinner: vc)
         }
         
         task.resume()

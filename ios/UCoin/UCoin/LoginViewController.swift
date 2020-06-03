@@ -50,6 +50,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signInButtonPressed(_ sender: Any) {
+        view.endEditing(true)
         if (!(email.text?.isEmpty ?? true) && !(password.text?.isEmpty ?? true)) {
             let parameters: [String: Any] = ["email" : email.text!, "password" : password.text!]
             
@@ -69,6 +70,8 @@ class LoginViewController: UIViewController {
             
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("application/json", forHTTPHeaderField: "Accept")
+            
+            let vc = UIViewController.displaySpinner(onView: self.view, darkenBack: true)
             
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data, error == nil else {
@@ -93,13 +96,6 @@ class LoginViewController: UIViewController {
                         if let responseJSON = responseJSON as? [String: Any] {
                             CurrentSession.user = User(name: responseJSON["name"] as! String, accessToken: responseJSON["token"] as! String)
                             
-                            DispatchQueue.main.async {
-                                if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabViewController") as? UITabBarController {
-                                    vc.modalPresentationStyle = .fullScreen
-                                    vc.modalTransitionStyle = .coverVertical
-                                    self.present(vc, animated: true, completion: nil)
-                                }
-                            }
                             
                             let name = CurrentSession.user!.name.components(separatedBy: " ")[0]
                             
@@ -129,6 +125,18 @@ class LoginViewController: UIViewController {
                                             CurrentSession.user?.passiveBalance = (responseJSON["passive_balance"] as! Int32)
                                             CurrentSession.user?.email = (responseJSON["email"] as! String)
                                         }
+                                        
+                                        DispatchQueue.main.async {
+                                            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TabViewController") as? UITabBarController {
+                                                vc.modalPresentationStyle = .fullScreen
+                                                vc.modalTransitionStyle = .coverVertical
+                                                
+                                                self.present(vc, animated: true, completion: nil)
+                                            }
+                                        }
+                                    }
+                                    else {
+                                        self.displayErrorMessage(message: "Не удалось получить информацию о пользователе")
                                     }
                                 }
                             }
@@ -136,6 +144,7 @@ class LoginViewController: UIViewController {
                         }
                     }
                 }
+                UIViewController.removeSpinner(spinner: vc)
             }
             task.resume()
         }
